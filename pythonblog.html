@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pb.css">
+</head>
+<style>
+
+</style>
+<body>
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="#">Home</a>
+            <!--<a href="#">About Us</a>-->
+        </div>
+        <div class="navbar-right">
+            <h2 class="navbar-heading">HG Blogs</h2>
+        </div> 
+    </div>
+    <section1 id="s1" >
+        <!--IMAGE BELOW NAVABR-->
+        <div class="sec">
+            <div class="image-container">
+                <img src="ajay-gorecha-K3FpO1x0qB0-unsplash.jpg" alt="Image description">
+            </div>
+        </div>
+        <!--PYTHON EXPLANATION BEGIN -->
+
+        <div class="grid-container" id="grid">
+            <h2 class="heading">PYTHON</h2>
+            <div class="text-container">
+                <p>"Python is a high-level programming language. It is also known as an interpreted language because it executes code line by line, rather than compiling the entire program at once."
+                </p>
+                <p>
+                    The Variables are used to hold the values of different data types in Python. There are primarily two types of variables in most programming languages.
+                    The local variable and the Global variable.
+                </p>
+                <!--VARIABLE DIVDED INTO TWO PARTS -->
+                <div class="code-comparison">
+                    <div class="variable-column">
+                        Variable
+                    </div>
+                    <div class="code-column">
+                        <div class="code-box">
+                            Local Variable
+                        </div>
+                        <div class="code-box">
+                            Global Variable
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container1">
+                <img src="img.jpg" alt="Image">
+            </div>
+            <!--lOCAL VARIBALE AND GLOBAL VARIABLE -->
+                <div class="content" id="local">
+                    <h1>Local variable</h1>
+                    <p>The local varible is only defined with in the the specific functions. The local variable in a program doesn't hold any value outside the function in a program.
+                    <div class="chroma">
+                        <span class="code1">x=10</span><br>
+                        <span class="code1">y=20</span><br>
+                        <span class="code1">def add(a,b):</span><br>
+                        <span class="code1" id="in"> c=a+b</span><br>
+                        <span class="code1" id="in" >  return c</span><br>
+                        <span class="code1">sum=add(x,y)</span><br>
+                        <span class="code1">print(sum)</span><br>
+                        <span class="code1" id="in2">// here the variables a,b are local variables</span>
+                    </div>
+                </div>
+            <div id="Global" class="content">
+                <h1>Global Variable</h1>
+                    <p id="t-1">The Global Variable is the variable which is defined for the whole program it will work in every function.
+                    </p>
+                    <div class="chroma-2">
+                        <span class="code1">x=10</span><br>
+                        <span class="code1">y=20</span><br>
+                        <span class="code1">def add(a,b):</span><br>
+                        <span class="code1" id="in"> c=a+b</span><br>
+                        <span class="code1" id="in" >  return c</span><br>
+                        <span class="code1">sum=add(x,y)</span><br>
+                        <span class="code1">print(sum)</span><br>
+                        <span class="code1" id="in2">// Here the variables x and y are global variables </span>
+                    </div>
+            </div>   
+            <!--DATA TYPE-->
+            <div class="grid-container-1">
+                <h2 class="heading-1">Data Types</h2>
+                <div class="text-container-2">
+                    <p>"Data types define the kind of value a variable can hold. They determine the operations that can be performed on the variable.A variable can be of numeric data type(int,float,complex),String Data type etc.
+                    </p>
+                    <p>
+                        "In Python, you don't need to explicitly declare the data type of a variable, unlike in languages like C and C++."
+                    </p>
+                    <p>
+                        There are mainly 6 Types of Data type:                
+                         </p>          
+        </div>
+        <div class="grid-container-3">
+            <div class="data-type-column">
+                <div class="data-type">Data Types</div>
+            </div>
+            <div class="description-column">
+                <p>Numeric</p>
+                <p>String</p>
+                <p>List</p>
+                <p>Boolean</p>
+                <p>Tuple</p>
+                <p>Dictionary </p>
+            </div>   
+        </div>
+        <!-- DATA TYPES PARTS-->
+        <div  class="Dp-1" id="datatype-1">
+            <h1>Numeric Data Type</h1>
+            <p  class="Dp">Numeric data types represent numbers. They are further classified into two categories:</p>
+            <ul class="Dp">
+                <li>Integer: Whole numbers (e.g., 10, -5, 0)</li>
+                <li>Float: Decimal numbers (e.g., 3.14, -2.5)</li>
+            </ul>
+            </div>
+            <div class="Dp-1">
+                <h1>String Data Type</h1>
+            <p class="Dp">A sequence of characters enclosed in single or double quotes.</p>
+            <p class="Dp">Example: "Hello, World!"</p>
+            </div>
+            <div class="Dp-1">
+                <h1>Boolean Data Type</h1>
+                <p class="Dp">Represents either True or False.</p>
+                <p class="Dp">Example: True, False</p>
+            </div>
+            <div class="Dp-1">
+                <h1>List Data Type</h1>
+            <p class="Dp" >An ordered collection of items, enclosed in square brackets.</p>
+            <p class="Dp">Example: [1, 2, 3, "apple", "banana"]</p>
+            </div>
+            <div class="Dp-1">
+                <h1>Dictionary Data Type</h1>
+            <p class="Dp">An unordered collection of key-value pairs, enclosed in curly braces.</p>
+            <p class="Dp">Example: {"name": "Alice", "age": 30, "city": "New York"}</p>
+            </div>
+            <div class="Dp-1"><h1>Tuple Data Type</h1>
+                <p class="Dp">An ordered, immutable collection of items, enclosed in parentheses.</p>
+                <p class="Dp">Example: (10, 20, 30, "Python")</p>
+            </div>
+           </div>
+           <div class="grid-container-4">
+            <h1>Operators</h1>
+            <p>In Python, operators are special symbols that perform specific operations on values and variables.</p>
+            <div class="grid-item-4">
+              <h2>Arithmetic Operators</h2>
+              <p>Arithmetic operators are symbols used to perform basic mathematical operations on numerical values. These operations include addition, subtraction, multiplication, division, modulus, floor division, and exponentiation.</p>
+              <table>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>+</td>
+                  <td>Addition</td>
+                  <td>x + y</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>Subtraction</td>
+                  <td>x - y</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>Multiplication</td>
+                  <td>x * y</td>
+                </tr>
+                <tr>
+                  <td>/</td>
+                  <td>Division</td>
+                  <td>x / y</td>
+                </tr>
+                <tr>
+                  <td>%</td>
+                  <td>Modulus</td>
+                  <td>x % y</td>
+                </tr>
+                <tr>
+                  <td>**</td>
+                  <td>Exponentiation</td>
+                  <td>x ** y</td>
+                </tr>
+                <tr>
+                  <td>//</td>
+                  <td>Floor Division</td>
+                  <td>x // y</td>
+                </tr>
+              </table>
+            </div>
+          
+            <div class="grid-item-4">
+              <h2>Comparison Operators</h2>
+              <p>Comparison operators are used to compare two values and return a Boolean value (True or False). They are essential for making decisions and controlling the flow of your program</p>
+              <table>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>==</td>
+                  <td>Equal to</td>
+                  <td>x == y</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>Not equal to</td>
+                  <td>x != y</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Greater than</td>
+                  <td>x > y</td>
+                </tr>
+                <tr>
+                  <td><</td>
+                  <td>Less than</td>
+                  <td>x < y</td>
+                </tr>
+                <tr>
+                  <td>>=</td>
+                  <td>Greater than or equal to</td>
+                  <td>x >= y</td>
+                </tr>
+                <tr>
+                  <td><=</td>
+                  <td>Less than or equal to</td>
+                  <td>x <= y</td>
+                </tr>
+              </table>
+            </div>
+          
+            <div class="grid-item-4">
+              <h2>Assignment Operators</h2>
+              <p>Assignment operators are used to assign values to variables</p>
+              <table>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>=</td>
+                  <td>Assign value</td>
+                  <td>x = y</td>
+                </tr>
+                <tr>
+                  <td>+=</td>
+                  <td>Add and assign</td>
+                  <td>x += y</td>
+                </tr>
+                <tr>
+                  <td>-=</td>
+                  <td>Subtract and assign</td>
+                  <td>x -= y</td>
+                </tr>
+                <tr>
+                  <td>*=</td>
+                  <td>Multiply and assign</td>
+                  <td>x *= y</td>
+                </tr>
+                <tr>
+                  <td>/=</td>
+                  <td>Divide and assign</td>
+                  <td>x /= y</td>
+                </tr>
+                <tr>
+                  <td>%=</td>
+                  <td>Modulus and assign</td>
+                  <td>x %= y</td>
+                </tr>
+                <tr>
+                  <td>**=</td>
+                  <td>Exponentiate and assign</td>
+                  <td>x **= y</td>
+                </tr>
+                <tr>
+                  <td>//=</td>
+                  <td>Floor divide and assign</td>
+                  <td>x //= y</td>
+                </tr>
+              </table>
+            </div>
+          
+            <div class="grid-item-4">
+              <h2>Logical Operators</h2>
+              <p>Logical operators are used to combine conditional statements and return a Boolean value (True or False). They are essential for making decisions and controlling the flow of your program.</p>
+              <table>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>and</td>
+                  <td>Logical AND</td>
+                  <td>x and y</td>
+                </tr>
+                <tr>
+                  <td>or</td>
+                  <td>Logical OR</td>
+                  <td>x or y</td>
+                </tr>
+                <tr>
+                  <td>not</td>
+                  <td>Logical NOT</td>
+                  <td>not x</td>
+                </tr>
+              </table>
+            </div>
+          
+            <div class="grid-item-4">
+              <h2>Bitwise Operators</h2>
+              <p>Bitwise operators work on bits of an integer. They are used to manipulate individual bits within a binary representation of a number.</p>
+              <table>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&</td>
+                  <td>Bitwise AND</td>
+                  <td>x & y</td>
+                </tr>
+                <tr>
+                  <td>|</td>
+                  <td>Bitwise OR</td>
+                  <td>x | y</td>
+                </tr>
+                <tr>
+                  <td>^</td>
+                  <td>Bitwise XOR</td>
+                  <td>x ^ y</td>
+                </tr>
+                <tr>
+                  <td>~</td>
+                  <td>Bitwise NOT</td>
+                  <td>~x</td>
+                </tr>
+                <tr>
+                  <td><<</td>
+                  <td>Left shift</td>
+                  <td>x << y</td>
+                </tr>
+                <tr>
+                  <td>>></td>
+                  <td>Right shift</td>
+                  <td>x >> y</td>
+                </tr>
+              </table>
+            </div>
+            <div class="grid-item-4">
+                <h2>Identity Operators</h2>
+                <p>dentity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.</p>
+                <table>
+                  <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                  </tr>
+                  <tr>
+                    <td>is</td>
+                    <td>Returns True if both variables   
+             refer to the same object</td>
+                    <td>x is y</td>
+                  </tr>
+                  <tr>
+                    <td>is not</td>
+                    <td>Returns True if both variables do not refer to the same object</td>
+                    <td>x is not y</td>
+                  </tr>
+                </table>
+              </div>
+            
+              <div class="grid-item-4">
+                <h2>Membership Operators</h2>
+                <p>Membership operators are used to test whether a value or variable is found in a sequence (such as a string, list, tuple, set, or dictionary).</p>
+                <table>
+                  <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                  </tr>
+                  <tr>
+                    <td>in</td>
+                    <td>Returns True if a value is present in a sequence</td>
+                    <td>x in y</td>
+                  </tr>
+                  <tr>
+                    <td>not in</td>
+                    <td>Returns True if a value is not present in a sequence</td>
+                    <td>x not in y</td>
+                  </tr>
+                </table>
+              </div>
+          </div>
+    </section1>
+</body>
+</html>

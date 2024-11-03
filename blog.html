@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="pb.css">
+    <link rel="stylesheet" href="blog.css">
 </head>
 <style>
 
@@ -24,7 +24,7 @@
         <!--IMAGE BELOW NAVABR-->
         <div class="sec">
             <div class="image-container">
-                <img src="ajay-gorecha-K3FpO1x0qB0-unsplash.jpg" alt="Image description">
+                <img src="img1.jpg" alt="Image description">
             </div>
         </div>
         <!--PYTHON EXPLANATION BEGIN -->
@@ -402,7 +402,77 @@
                   </tr>
                 </table>
               </div>
+              <div class="typecast-container">
+                <div class="heading">
+                  <h2>Type Casting</h2>
+                  <p class="text">Typecasting is one of the key feature in python. Type casting is a fundamental concept in Python that involves converting one data type to another. <br>There are two primary methods:
+                </p>
+                <!--Typecast Divided into Twoparts-->
+              <div class="typecast-comparison">
+                <div class="Implicit-column">
+                    Typecasting
+                </div>
+                <div class="Explicit-column">
+                    <div class="Typecast-box">
+                        Implicit Typecasting
+                    </div>
+                    <div class="Typecast-box">
+                        Explicit Typecasting
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text">In this blog we will learn about how to typecast different variables or data.
+        </p>
+                </div>
+                <div class="implicit-container">
+                  <h3>Implicit Type Casting</h3>
+                  <p class="text">Python automatically performs implicit type casting in certain situations to prevent data loss. For instance, when dividing two integers, Python implicitly converts the result to a float to maintain precision.
+                </p>
+                <p>For ex - While dividing two integers number the interpreter implicitly converts the variable x into float
+                </p>
+                <div class="code-container">
+                    <pre><code>
+         x = 5
+         y = 2
+         div = x / y
+         print(div)  # Output: 2.5
+                    </code></pre>
+                  </div>
+                  <h3>Explaination:</h3>
+                  <p>
+                    Here we have assigned the values to variable x and y <br>
+                    The variable x has the value 5 and the variable y has the value 2 <br>
+                    Now in the next line of code we have defined a variable Div in which we have assign the divison of x/y <br>
+                    Now here the interpreter will implicitly convert the x variable into float data type <br>
+                    In the last line of code we have print the output which is in the float data type <br>
+                    </p>
+                </div>
+                <div class="explicit-container">
+                  <h3>Explicit Type Casting</h3>
+                  <p class="text">In explicit type casting, the programmer manually converts a data type using built-in functions like int(), float(), str(), bool(), and tuple(). This is often necessary when working with user input or when precise data type conversions are required.
+                    </p>
+                    <p>For example -> if we use the input in-built function in python by default it gives the value in string data type so a user can do explicit type casting by using any of the functions.
+                    </p>
+                    <div class="code-container">
+                        <pre><code>
+        a = input("Enter a number: ") 
+        b = int(a) 
+        print(b)
+                        </code></pre>
+                      </div>
+                      <p>In this example, the input() function returns a string. To perform arithmetic operations, we explicitly convert the input string to an integer using the int() function.
+                    </p>
+                    <h3>Explaination:</h3>
+                    <p>In these codes of line two variables are defined which are taking input from the users the variable a and the variable b <br>
+                        here in output we can see that when we print the variable a the output is in string in variable <br>
+                        But in next line of code for variable b the user has explicity type cast the input into integer <br>
+                        Hence we can see a integer output.
+                        </p>
+                </div>
+              </div>
           </div>
+
     </section1>
 </body>
 </html>

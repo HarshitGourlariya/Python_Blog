@@ -34,7 +34,7 @@ body{
     margin-top: 10px;  
 }
 .sec div{
-    background-image: url(ajay-gorecha-K3FpO1x0qB0-unsplash.jpg);
+    background-image: url(img1.jpg);
     background-repeat: no-repeat;
 }
 .grid-container {
@@ -343,6 +343,70 @@ th, td {
 
 th {
   background-color: #f2f2f2;
+}
+/* TYPECASTNG CSS*/
+.typecast-container {
+  display: grid;
+  grid-template-columns: 1fr; /* One column */
+  gap: 20px; /* Adjust the gap between divs as needed */
+  padding: 20px;
+  
+}
+.text{
+  font-size: 15px;
+}
+.heading{
+  font-size: 1.5em;
+
+}
+
+.implicit-container, .explicit-container {
+  
+  padding: 10px;
+}
+/*Typecast divided into two parts*/
+.typecast-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust the gap as needed */
+  background-color: rgb(41, 40, 40);
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  
+}
+.Implicit-column{
+  border: 1px solid white;
+  padding-top: 20px;
+  height: 30%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: 30px;
+  
+  border-radius: 10px;
+  
+}
+.Explicit-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; /* Adjust the gap as needed */
+  border-radius: 10px;
+  margin: 5px;
+
+}
+.Typecast-box {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+
+  padding: 10px;}
+
+/*Code EX Css*/
+.code-container{
+  background-color: rgb(41, 40, 40);
+  color: white;
+  border-radius: 10px;
 }
 
 

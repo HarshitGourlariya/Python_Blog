@@ -408,7 +408,35 @@ th {
   color: white;
   border-radius: 10px;
 }
-
+/* Operator Precedence and Associativity Css*/
+.precedency-container{
+  grid-column: 1 / span 2;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  width: 96%;
+}
+.precedency-container-1{
+  grid-column: 1 / span 2;
+  padding: 20px;
+  padding-top: 0px;
+  width: 96%;
+}
+  /*Operator table css*/
+  .table-1 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .th-1, .td-1 {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .th-1{
+    background-color: #f2f2f2;
+  }
 
 
     

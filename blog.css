@@ -359,9 +359,7 @@ th {
   font-size: 1.5em;
 
 }
-
 .implicit-container, .explicit-container {
-  
   padding: 10px;
 }
 /*Typecast divided into two parts*/
@@ -372,8 +370,7 @@ th {
   background-color: rgb(41, 40, 40);
   color: white;
   border-radius: 10px;
-  font-size: 15px;
-  
+  font-size: 15px; 
 }
 .Implicit-column{
   border: 1px solid white;
@@ -383,9 +380,7 @@ th {
   margin-top: 30px;
   margin-bottom: 30px;
   margin: 30px;
-  
-  border-radius: 10px;
-  
+  border-radius: 10px; 
 }
 .Explicit-column {
   display: grid;
@@ -393,18 +388,16 @@ th {
   gap: 10px; /* Adjust the gap as needed */
   border-radius: 10px;
   margin: 5px;
-
 }
 .Typecast-box {
   border: 1px solid white;
   border-radius: 10px;
   margin: 5px;
-
   padding: 10px;}
 
 /*Code EX- TYPECASTING Css*/
 .code-container{
-  background-color: rgb(41, 40, 40);
+  /*background-color: rgb(41, 40, 40); */
   color: white;
   border-radius: 10px;
 }
@@ -427,16 +420,69 @@ th {
     border-collapse: collapse;
     width: 100%;
   }
-  
   .th-1, .td-1 {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
   }
-  
   .th-1{
     background-color: #f2f2f2;
   }
+  /*CONDITIONAL STATEMENT CSS*/
+  .conditional-container{
+    grid-column: 1 / span 2;
+  }
+.conditional-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust the gap as needed */
+  background-color: rgb(41, 40, 40);
+  color: white;
+  border-radius: 10px;   
+  margin: 30px;
+  
+}
+.conditional-column{
+  border: 1px solid white; 
+  height: 14%;
+  padding-top: 5px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  border-radius: 10px; 
+}
+.conditional-column-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; /* Adjust the gap as needed */
+  border-radius: 10px;
+  margin: 5px;
+}
+.condition-box {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;}
+.heading-statement{
+  margin-bottom: 0px;
+}
+  /* CODES OF CONDITIONAL STATEMENTS CSS*/
+   pre {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      margin: 30px;
+  }
+  code{
+      color: #007bff;
+  }
+/* IMAGE OF FLOWCHARTS*/
+.img-statements{
+  margin-left: 50vh;
+}
 
 
     

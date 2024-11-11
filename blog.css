@@ -318,6 +318,9 @@ body{
   .text-container-2 p{
     font-size: 12px;
   }
+  code{
+    font-size: 8px;
+  }
 }
 
 /* Operators Css*/

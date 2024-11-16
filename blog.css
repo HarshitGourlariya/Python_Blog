@@ -482,8 +482,19 @@ th {
   code{
       color: #007bff;
   }
-/* IMAGE OF FLOWCHARTS*/
-
+/*For loop and while loop Css*/
+.for-tab {
+  display: grid;
+  grid-template-columns: 1fr;
+/*  border: 1px solid black;*/
+  padding: 20px;
+}
+.for-tab h1{
+  margin: 0px;
+}
+.for-tab p{
+  margin-bottom: 0px;
+}
 
 
     

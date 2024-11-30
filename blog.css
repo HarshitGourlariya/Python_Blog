@@ -495,7 +495,10 @@ th {
 .for-tab p{
   margin-bottom: 0px;
 }
-
+/*Css for Strings*/
+.str-container{
+  grid-column: 1 / span 2;
+}
 
     
     

@@ -622,7 +622,7 @@
         
      </div>
         <div class="Statement">
-          <h1 class="heading-statement"> Nested if contional statement 
+          <h1 class="heading-statement"> Nested if conditional statement 
           </h1>
           <p>"Nested if statements allow you to create complex decision-making structures in Python. By placing one if statement within another, you can execute different code blocks based on multiple conditions. However, excessive nesting can make code less readable and harder to maintain.  
           </p>
@@ -641,7 +641,8 @@
     else:
         print("x is not greater than 5")
 
-    Output: Both x and y are greater than their respective values    
+    Output: Both x and y are greater than 
+    their respective values    
             </code>
             </pre>
      </div>
@@ -693,7 +694,134 @@
       </code></pre>
   </div>
           </div> 
-
+          <div class="str-container">
+            <h2>Strings</h2>
+            <p>The string is defined as any set of characters within either single quote or the double quotes.
+            </p>
+            <pre>
+                <code>
+            ex:
+            s='Notes'
+            s="Notes"        
+                </code>
+            </pre>
+            <h2>HOW TO ACESS CHARCTERS OF THE STRING</h2>
+            <p>There are two ways to access the characters in the string </p>
+            <ul class="str-part">
+                <li>By Indexing</li>
+                <li>By Slice Operator</li>
+              </ul>
+             <h2>By using Indexing</h2> 
+             <pre>
+                <code>
+             s = "Notes"
+        
+            print(s[0])
+            Output:N
+                    
+            print(s[1])
+            Output:o
+                    
+            print(s[2])
+            Output:t
+                    
+            print(s[3])
+            Output:e
+                    
+            print(s[4])
+             Output:s
+                          
+                </code>
+             </pre>
+             <h2>Slice Operators</h2>
+             <p>
+                Syntax:
+              s[begin:end:step]
+             </p>
+             <p>Begin: From where the we have to consider the slicing of the string <br>
+                End: From where the slicing of the string will end at index -1<br>
+                Step: It is the incremented value</p>
+         
+         <pre>
+            <code>
+        ex: s='Notes'
+            print(s[0:2:1])
+            Output: No
+            print(s[1:2])
+            Output: o
+            </code>
+         </pre>
+         <h1>Mathematical Operators in String </h1>
+         <p>We can use Two types of mathematical Operators in String</p>
+         <ul class="str-part">
+            <li> '+' For concatenate</li>
+            <li>'*' For multiplication</li>
+          </ul>
+          <p>Note : Both the arguments should be in string to concanecate and to multiply</p>
+          <h2>len() Built in Function</h2>
+          <p>We can use the len() function to find the number of characters present in the string</p>
+          <pre>
+            <code>
+        ex:
+            s= "Notes"
+            print(len(s))
+            Output: 5       
+            </code>
+          </pre>
+          <h2>Finding Substring</h2>
+          <p>We can use four methods to find the string</p>
+          <ul class="str-part">
+            <li>  For forward Direction -> index() ,find()</li>
+            <li>For backward Direction -> rindex() ,rfind()</li>
+          </ul>
+          <h3>find()</h3>
+          <pre>
+            <code>
+        ex:
+         s="notes"
+         print(s.find("e"))
+         Ourput:3      
+            </code>
+          </pre>
+          <h3>Index()</h3>
+          <p>The index method is same as find() the only difference is that it returns Value error if the required character o string is not 
+        </p>
+        <h2>Replacing the String with another String</h2>
+        <pre>
+            <code>
+         ex:
+         s1= "notes"
+         s2 = print(s1.replace('notes','hello'))        
+            </code>
+        </pre>
+        <h2>Splitting of the Strings</h2>
+        <p>We can also split the strings by using split()
+        </p>
+        <pre>
+            <code>
+        ex: s = 'python is a very good language'
+        s1 = s.split()
+        print(s1)
+            </code>
+        </pre>
+        <h2>Joining of the Strings</h2>
+        <pre>
+            <code>
+        ex:
+        s= ('My' ,'notes', 'are', 'very', 'good')
+        s1 = '-'.join(s)
+        print(s1)
+            </code>
+        </pre>
+        <h2>Changing the case of the Strings</h2>
+        <p>1. upper()===>To convert all characters to upper case <br>
+            2. lower() ===>To convert all characters to lower case <br>
+            3. swapcase()===>converts all lower case characters to upper case and all upper case characters to lower case <br>
+            4. title() ===>To convert all character to title case. i.e first character in every word should be upper case and all remaining characters should be in lower case. <br>
+            5. capitalize() ==>Only first character will be converted to upper case and all remaining characters
+            can be converted to lower case 
+            </p>
+          </div>
     </section1>
 </body>
 </html>

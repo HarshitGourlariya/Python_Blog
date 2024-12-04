@@ -822,6 +822,144 @@
             can be converted to lower case 
             </p>
           </div>
+           <!--LIST-TUPLE-HTML-->
+    <div class="list-tup-container">
+      <h2>List</h2>
+      <p>A list is a data type in Python used to store a collection of items. Lists are mutable, which means we can modify their contents after they are created.The data in the list is stored in the square brackets.
+      </p>
+      <pre>
+          <code>            
+  lst = [1,2,3,4,5]
+          </code>
+      </pre>
+      <h2>Accessing the elements of the list</h2>
+      <p>The elemnts of the list can be accessed by two methods</p>
+      <ul class="lst-part">
+          <li>By Indexing</li>
+          <li>By Slice Operator</li>
+        </ul>
+      <h3>Indexing</h3>
+      <pre>
+          <code>
+  lst = [1,2,3,4]
+  print(lst.[0])
+  output:1              
+          </code>
+      </pre>
+  <h3>Slice operator</h3> 
+  <pre>
+      <code>
+  list = list1[start:stop:step]        
+      </code>
+  </pre>  
+  <p>
+      start ==>it indicates the index where slice has to startdefault value is 0 <br>
+      stop ===>It indicates the index where slice has to end default value is max allowed index of list ie length of the list <br>
+      step ==>increment value default value is 1  
+  </p> 
+  <pre>
+      <code>
+  n=[1,2,3,4,5,6,7,8,9,10]
+  print(n[2:7:2])
+  print(n[4::2])
+  print(n[3:7])
+  print(n[8:2:-2])
+   print(n[4:100])         
+      </code>
+  </pre>
+
+  <h2>Tuple</h2>
+  <p>Tuples are used to store multiple items in a single variable. A tuple is an immutable collection of data, meaning its elements cannot be changed once it's created. Tuples are written within parentheses.The tuple can also be defined as the read only version of the list as once the tuple is created we cannot make any changes in it. 
+  </p>
+  <pre>
+      <code>
+  tup =(1,2,3,4,5)  
+   </code>
+  </pre>
+  <h2>Tuple creation</h2>
+  <ul class="tup-part">
+      <li> t=()
+          creation of empty tuple</li>
+      <li> t=(10,)
+          t=10,
+          creation of single valued tuple ,parenthesis are optional,should ends with comma</li>
+          <li>t=10,20,30
+              t=(10,20,30)
+              creation of multi values tuples & parenthesis are optional</li>
+    </ul>
+    <h2>Accessing the elements of the Tuple</h2>
+    <ul class="lst-part">
+      <li>By Indexing</li>
+      <li>By Slice Operator</li>
+    </ul>
+    <h3>Indexing</h3>
+    <pre>
+      <code>
+  t=(10,20,30,40,50,60)
+  print(t[0]) #10
+  print(t[-1]) #60
+  print(t[100]) IndexError: tuple index out of range 
+      </code>
+    </pre>
+    <h3>Slice Operator</h3>
+    <pre>
+      <code>
+  t=(10,20,30,40,50,60)
+  print(t[2:5])
+  print(t[2:100])
+  print(t[::2])
+
+ Output
+ (30, 40, 50)
+ (30, 40, 50, 60)
+ (10, 30, 50) 
+      </code>
+    </pre>
+  </div>
+  <!--list and tup table -->
+    <div class="lst-tup-table">
+      <h2>Difference b/w List and tuple</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>List</th>
+              <th>Tuple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>List is a Group of Comma separeated
+                Values within Square Brackets and Square
+                Brackets are mandatory.</td>
+              <td>Tuple is a Group of Comma separeated
+                Values within Parenthesis and Parenthesis
+                are optional.</td>
+            </tr>
+            <tr>
+              <td>List Objects are Mutable i.e. once we
+                creates List Object we can perform any
+                changes in that Object.</td>
+              <td>Tuple Objeccts are Immutable i.e. once
+                we creates Tuple Object we cannot change
+                its content.</td>
+            </tr>
+            <tr>
+              <td>If the Content is not fixed and keep on
+                changing then we should go for List.</td>
+              <td>If the content is fixed and never changes
+                then we should go for Tuple.</td>
+            </tr>
+            <tr>
+              <td>List Objects can not used as Keys for
+                Dictionries because Keys should be
+                Hashable and Immutable</td>
+              <td>Tuple Objects can be used as Keys for
+                Dictionries because Keys should be
+                Hashable and Immutable.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section1>
 </body>
 </html>

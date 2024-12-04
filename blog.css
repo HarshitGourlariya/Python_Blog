@@ -499,6 +499,29 @@ th {
 .str-container{
   grid-column: 1 / span 2;
 }
+/*LIST-TUPLE-CSS*/
+.list-tup-container{
+  /*display: grid;
+  grid-template-columns: 1fr;*/
+  grid-column: 1 / span 2;
+}
+/*list-tuple-table-css*/
+.lst-tup-table {
+  /*border: 1px solid black; */
+  border-collapse: collapse;
+  margin: 20px;
+}
+.lst-tup-table th, .lst-tup-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.lst-tup-table th {
+  background-color: #f2f2f2;
+}
+.lst-tup-table{
+  grid-column: 1 /span 2;
+}
 
     
     

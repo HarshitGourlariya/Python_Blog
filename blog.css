@@ -523,6 +523,12 @@ th {
   grid-column: 1 /span 2;
 }
 
+/*Sets css*/
+/*set-container css*/
+.set-container{
+  grid-column: 1/span 2;
+  padding: 5px;
+}
     
     
   

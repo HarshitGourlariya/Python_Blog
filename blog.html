@@ -960,6 +960,133 @@
           </tbody>
         </table>
       </div>
+      <div class="set-container">
+        <h2>SETS</h2>
+        <p>Sets are an ideal choice for representing a group of unique values as a single entity. They offer several key characteristics: they do not allow duplicate elements, they do not preserve the order of insertion, and they do not support indexing or slicing. While the order of elements may not be guaranteed, sets can be sorted for specific purposes. This makes sets useful for tasks like removing duplicates from a list or performing set operations like union, intersection, and difference.
+        </p>
+        <pre>
+            <code>
+    s={10,20,30,40}
+    print(s) 
+               
+     Ouput:{10,20,30,40}
+            </code>
+        </pre>
+        <h2>Important set functions</h2>
+        <h3>add(x):</h3>
+        <p>When we want to add individual element to the set we use add()
+        </p>
+        <pre>
+            <code>
+    ex:
+    s={10,20,30}
+    s.add(40);
+    print(s) #{40, 10, 20, 30} 
+                
+            </code>
+        </pre>
+        <h3>update(x,y,z):</h3>
+        <p>when we want to add multiple elements to the set we use update()
+
+        </p>
+        <pre>
+            <code>
+ex:
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+                
+x.update(y)
+                
+ print(x)
+
+Output:
+{'google', 'microsoft', 'apple', 'banana', 'cherry'}
+                
+                   
+            </code>
+        </pre>
+        <h3>Copy()</h3>
+        <p>This set function is used when we want to copy the set
+        </p>
+        <pre>
+            <code>
+ex:
+s={10,20,30}
+s1=s.copy()
+print(s1)
+                
+            </code>
+        </pre>
+        <h3>pop()</h3>
+        <p>It removes and returns some random element from the set.
+        </p>
+        <pre>
+            <code>
+ex:
+fruits = {"apple", "banana", "cherry"}
+                
+fruits.pop()
+                
+print(fruits)
+                
+output:
+{'apple', 'cherry'}
+                
+            </code>
+        </pre>
+       <h3>remove()</h3>
+        <p>The remove set function is used to remove the specified element from the set . If in case the element is not present in the set it returns keyerror.
+        </p>
+        <pre>
+            <code>
+ex:
+s={40,10,30,20}
+s.remove(30)
+                
+output:
+{40,10,20}
+                
+            </code>
+        </pre>
+        <h2>Mathematical operation in set</h2>
+        <h3>union():</h3>
+        <p>We can use this function to return all the elements present in the set
+        </p>
+        <pre>
+            <code>
+ex:
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.union(y)) #{10, 20, 30, 40, 50, 60}
+print(x|y) #{10, 20, 30, 40, 50, 60}
+            </code>
+        </pre>
+        <h3>Intersection()
+        </h3>
+        <p>The intersection() is used to return the common element present in the sets.
+        </p>
+        <pre>
+            <code>
+ex:
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.intersection(y)) #{40, 30}
+print(x&y) #{40, 30}
+                
+            </code>
+        </pre>
+        <h3>Difference():</h3>
+        <p>The difference() is used to return the elements presents in x and not in y </p>
+        <pre>
+            <code>
+x={10,20,30,40}
+y={30,40,50,60}
+print(x.difference(y)) #{10, 20}
+    print(x-y) #{10, 20}
+print(y-x) #{50, 60}
+            </code>
+        </pre>
+    </div>
     </section1>
 </body>
 </html>

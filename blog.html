@@ -1087,6 +1087,82 @@ print(y-x) #{50, 60}
             </code>
         </pre>
     </div>
+    <div class="function-container">
+      <h2>Functions</h2>
+      <p>The functions in python can be defined as the reusable block of codes that perform a certain task.
+          Before we start defining functions ourselves, we’ll look at some of Python’s built-in functions. Let’s start with the most well-known built-in function, called print:
+      </p>
+      <pre>
+          <code>
+>>> print('Hello, readers!')
+Hello, readers!
+>>> print(15)
+15
+              
+          </code>
+      </pre>
+<h2>Creating python functions</h2>
+<p>In programming language there are certain syntax we need to follow and python is not an exception
+</p>
+<pre>
+  <code>
+def function_name:
+#statements
+return 
+
+  </code>
+</pre>
+<h2>Advantages of using functions
+</h2>
+<h3>Advantages of using functions
+</h3>
+<p>A Python function can be defined once and used many times. So it aids in code reuse: you don’t want to write the same code more than once.
+
+  Functions are a great way to keep your code short, concise, and readable. By giving a function a well-chosen name, your code will become even more readable because the function name directly explains what will happen. This way, others (or future you) can read your code, and without looking at all of it, understand what it’s doing anyway because of the well-chosen function names.
+  </p>
+  <h3>Return values
+  </h3>
+  <p>A function can return a value. This value is often the result of some calculation or operation. In fact, a Python function can even return multiple values.
+
+      We can make this more interesting by allowing an argument to be passed to our function. Again we define a function with def, but we add a variable name between the parentheses:
+      </p>
+      <pre>
+          <code>
+>>> def say_hi(name):
+    print('Hi', name)
+>>> say_hi('chiku')
+Hi chiku
+          </code>
+      </pre>
+      <p>Our function now accepts a value, which gets assigned to the variable name. We call such variables the parameter, while the actual value we provide (‘Chiku’) is called the argument.
+      </p>
+      <h2>Variable scope</h2>
+      <p>The variable name only exists inside our function. We say that the variable’s scope name is limited to the function say_hi, meaning it doesn’t exist outside of it.
+      </p>
+      <h3>Scope
+      </h3>
+      <p>The visibility of a variable is called scope. The scope defines which parts of your program can see and use a variable.<br>
+          If we define a variable at the so-called top level of a program, it is visible in all places.
+          </p>
+          <pre>
+              <code>
+>>> def say_hi():
+...    print("Hi", name)
+...    answer = "Hi"
+...
+>>> name = 'Chiku'
+>>> say_hi()
+Hi Chiku
+>>> print(answer)
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+              </code>
+          </pre>
+          <p>NameError: name 'answer' is not defined
+              say_hi was able to use the variable name, as expected, because it’s a top-level variable: it is visible everywhere. However, answer, defined inside say_hi, is not known outside of the function and causes a NameError. Python gives us an informative and detailed error: “name ‘answer’ is not defined.”
+              
+              </p>
+  </div>
     </section1>
 </body>
 </html>

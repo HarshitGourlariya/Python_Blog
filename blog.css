@@ -529,6 +529,9 @@ th {
   grid-column: 1/span 2;
   padding: 5px;
 }
-    
+/*Function Css*/
+.function-container{
+  grid-column: 1/span 2;
+}
     
   

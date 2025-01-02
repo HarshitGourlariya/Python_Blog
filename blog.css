@@ -533,5 +533,8 @@ th {
 .function-container{
   grid-column: 1/span 2;
 }
+.rec-container{
+  grid-column: 1/span 2;
+}
     
   

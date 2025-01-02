@@ -1163,6 +1163,92 @@ File "<stdin>", line 1, in <module>
               
               </p>
   </div>
+      <!--RECURSION-->
+      <div class="rec-container">
+        <h2>Recursion</h2>
+        <p>Recursion involves a function calling itself directly or indirectly to solve a problem by breaking it down into simpler and more manageable parts.
+        </p>
+        <h2>Python Recursive Function
+        </h2>
+        <p>In Python, a recursive function is defined like any other function, but it includes a call to itself. 
+        </p>
+        <pre>
+            <code>
+def factorial(n):
+if n == 1:
+    return 1
+else:
+    return n * factorial(n-1)
+
+print(factorial(5)) 
+
+            </code>
+        </pre>
+        <h2>Basic Structure of Recursive Fucntion</h2>
+        <pre>
+            <code>
+def recursive_function(parameters):
+
+
+if base_case_condition:
+
+
+return base_result
+
+
+else:
+
+
+return recursive_function(modified_parameters)
+            </code>
+        </pre>
+        <h2>Advantages:</h2>
+    <ul>
+        <li>Easier to Understand: For some problems, like navigating through a tree-like structure, recursive solutions can be much easier to grasp and write compared to using loops.
+        </li>
+        <li>Shorter Code: Often, you can express complex logic more concisely with recursion, leading to shorter and potentially more readable code.
+        </li>
+    </ul>
+    <h2>Disadvantages:
+    </h2>
+    <ul>
+        <li>Uses More Memory: Each time a function calls itself, it uses a bit of memory to keep track of where it was before. This can add up quickly, especially for deeply nested recursive calls.
+        </li>
+        <li>Can be Slower: The overhead of making function calls can sometimes make recursive solutions run slower than equivalent solutions using loops.
+        </li>
+    </ul>        
+    
+    <!--RECURSION CODES EXAMPLE-->
+<h2>Examples</h2>
+<p>Fibonnaci Series Using Recursion</p>
+<pre>
+    <code>
+def fibonacci(n):
+if n <= 1:
+return n
+else:
+return fibonacci(n-1) + fibonacci(n-2)
+      
+     
+result = fibonacci(6)
+print(f"6th Fibonacci number is: {result}")
+    </code>
+</pre>
+<p>Factorial Using Recursion</p>
+<pre>
+    <code>
+def factorial(n):
+
+if n == 0:
+return 1
+else:
+return n * factorial(n-1)
+
+result = factorial(5) 
+print(f"Factorial of 5 is: {result}")
+    </code>
+</pre>
+</div>
     </section1>
 </body>
 </html>

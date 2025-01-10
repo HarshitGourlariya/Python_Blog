@@ -1249,6 +1249,66 @@ print(f"Factorial of 5 is: {result}")
     </code>
 </pre>
 </div>
+<div class="tk_api_container">
+  <h1>Python Library and Api</h1>
+  <h2>Tkinter and Api</h2>
+  <p>In this blog, we'll walk through the basics of Tkinter, how to interact with APIs. Whether you're a beginner or looking to brush up on your programming skills, this guide will set you on the right path to mastering Python and Tkinter.</p>
+  <h2>Tkinter</h2>
+  <p>Tkinter is like a special set of tools that helps you build that program. It gives you the building blocks – like buttons, boxes, and labels – and lets you put them together to create a program that looks nice and is easy to use.</p>
+  <h2>Widgets of Tkinter</h2>
+  <h3>Label</h3>
+  <p>This is used to display text or images. For instance, you can use Label to show the current temperature, weather conditions, or the name of the city.</p>
+  <pre>
+    <code class="tkinter_code">
+      
+        from tkinter import Label
+        
+        label = Label(root, text="Temperature: 25°C")
+        label.pack()       
+    </code>
+  </pre>
+  <h3>Entry</h3>
+  <p>This widget allows users to enter a single line of text. You can use it to let users input a city name or ZIP code to get weather information.</p>
+  <pre>
+    <code class="tkinter_code">
+       
+        from tkinter import Entry
+        
+        entry = Entry(root)
+        entry.pack()        
+    </code>
+  </pre>
+  <h3>Button</h3>
+  <p>Buttons can be used to trigger actions when clicked, like fetching weather data.</p>
+  <pre>
+    <code class="tkinter_code"> 
+    from tkinter import Button
+
+    button = Button(root, text="Get Weather", command=fetch_weather)
+    button.pack()   
+    </code>
+  </pre>
+  <h3>Text</h3>
+  <p>This widget is useful for displaying multiple lines of text, such as weather details for different days or additional weather information.</p>
+  <pre>
+    <code class="tkinter_code">
+        from tkinter import Text
+
+        text = Text(root)
+        text.pack()
+           
+    </code>
+  </pre>
+  <h2>Api(Application Programming Interface)</h2>
+  <p>An API (Application Programming Interface) is like a bridge that allows different software systems to communicate with each other.</p>
+  <ul>
+    <li>Interaction: APIs define how software components should interact. For example, a weather app might use an API to get weather data from a weather service.
+    </li>
+    <li>Requests and Responses: APIs operate through requests and responses, much like a conversation. Your app sends a request to an API, and the API sends back the response with the required data.</li>
+    <li>Formats: Most APIs use common data formats like JSON or XML, making it easier for different systems to understand the data shared.</li>
+  </ul>
+</div>
+
     </section1>
 </body>
 </html>

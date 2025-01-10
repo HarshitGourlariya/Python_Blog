@@ -537,6 +537,11 @@ th {
 .rec-container{
   grid-column: 1/span 2;
 }
+/*Tkinter Css*/
+.tk_api_container{
+  grid-column: 1/span 2;
+}
+
 
     
   
